@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[version=3]{mhchem}
+
+\begin{document}
+\section{Vorwort zum Versuch}
+In diesem Versuch werden die radioaktiven Präparate mittels Szintillatoren auf ihre Abstrahlung durch den radioaktiven Zerfall dedektiert.\\
+\section{Messverfahren}
+Mittels verschiedener radioaktiven Präparate werden die Signallängen des eingesetzten NaJ-Szintil-lationszählers und des Plastikszintillationszähler verglichen. Dabei werden zuerst die Signale des NaJ-Szintillationszählers nach dem Photomultiplier betrachtet. Dann die Signale nach dem verwendeten Amplifier, sowohl im unipolarern, als auch nach dem bipolaren Ausgang. Ebenso werden die Signale nach dem Single Channel Analyzer überprüft und die des Gate and Delay Generator. Die Signale werden mittels Oszilloskop betrachtet.\\
+Die dabei verwendenden NIM-Geräte werden auf ihre quantitativen Einstellungsänderungen untersucht.\\ Anschließend werden die $\gamma$-Spektren von $^{22}$Na, $^{152}$Eu und $^{60}$Co jeweils 30 min Messdauer gemessen. 
+Etwa 180 min lang wird das $\gamma$-Spektrum des ($^{228}$Th) RdTH-Präparates gemessen. 
+Anschließend wird mit gleicher Dauer die Untergrundmessung durchgeführt. Mittels bestimmten Delay der beiden Szintillationszählern wird die Winkelkorrelation der 511-keV Vernichtungsphotonen gemessen. Die Anzahl der zufällige Koinzidenzen wird anschließend gemessen.
+\section{Auswertung}
+Anhand der aufgezeichneten Daten des Oszilloskop werden die zeitliche Verzögerung der obengenannten Signale bestimmt. Die aufgezeichneten bekannten Energien der $\gamma$-Spektren werden mittels einer Untergrundkorrektur des Thoriumsspektrums bestimmt. Die Eichung des Multi Channel Analyzer wird durch die drei intensivsten Linien durchgeführt.
+Nach der Untergrundmessung wird die intensiv auftretenden Linie bestimmt.
+Zu guter Letzt wird für die letzte Versuchsdurchführung der optimale Delay beider Szintillatorzählern bestimmt.
+\section{Physikalischen Grundlagen}
+\textbf{Strahlungsarten}\\
+In der Welt gibt es instabile Atomkerne, die radioaktiv sind. Das bedeutet, dass sie in andere Kerne zerfallen und dabei Elektronen, Photonen oder $\alpha$-Teilchen emittieren. Dieser Prozess ist ein statistischer Prozess, welches mit der Zeit exponentiell abnimmt. Da Kerne durch ihre Atomhülle gut geschützt sind, spielen äußere Einflüsse wie Druck und Temperatur keine Rolle. 
+Man unterscheidet drei verschiedene Arten von Strahlung:
+\begin{itemize}
+\item{$\alpha$-Strahlung:}\\
+Hier strahlen radioaktive Nuklide Helium-4-Atomkerne ab:\\
+$\ce{^{A}_{Z}X} \longrightarrow \ce{^{A-4}_{Z-2}Y} + \ce{^{4}_{2}He^{2+}}$
+
+Hier muss man anmerken, dass im klassischen Fall die $\alpha$-Strahlung nicht existiert. Hier kommen quantenmechanische Effekte zu tragen.\\
+
+$\beta$-Strahlung:\\
+Hier werden geladene Teilchen (Elektron oder Positron) ausgesendet, wobei man zwei Fälle der $\beta$-Strahlung bekannt sind:
+\item{$\beta^{-}$-Zerfall:}\\
+$n \longrightarrow p + e^{-} + \overline{\mu}_{e}$ ; Proton + Elektron + Anti-Elektroneutino
+
+\item{$\beta^{+}$-Zerfall:}
+$p \longrightarrow n + e^{+} + \mu_{e}$
+
+Dieser Zerfall ist jedoch nicht möglich, da das Positron nur in $e^+ + e^-$ Koppelung existieren kann, den sogenannten Positrioniumatom.
+\item{$\gamma$-Strahlung:}\\
+Nach Aussendung der $\alpha$ oder $\beta$ Teilchen, bleibt meistens der zurückbleibende Kern im angeregtem Zustand. Beim Übergang in den Grundzustand sendet er ein Photon aus:\\ 
+$\ce{^{A}_{Z}X^{*}}\longrightarrow \ce{^{A}_{Z}X + \gamma}$, wobei $X^{*}$ = $X$ in angeregten Zustand und $\gamma$ Gammaquant sind.\\
+\end{itemize}
+Hier unterscheidet man zwei verschiedene Arten der $\gamma$-Strahlung:\\
+Innere Konversion und den Augereffekt.
+Bei der inneren Konversion wird kein $\gamma$-Quant emittiert, sondern die Energie wird an ein Hüllenelektron abgegeben. Dieser Elektron hat dann eine Energie von $E_e = E_{\gamma} - E_B$.\\
+Beim Auger-Effekt spricht man vom `Effekt der Elektronhülle`. Die überflüssige Energie wird auf ein $e^-$, den sog. Augerelektron übertragen. Dabei entsteht ein Loch in der Elektronenschale. Insgesamt hat man zwei Fehlstellen.\\
+
+\textbf{Wechselwirkung der geladenen Teilchen mit Materie}\\
+Ein geladenes Teilchen hat eine maximale kinetische Energie von
+$E_{max,kin} = 2 m_e c^2 \beta^2 \gamma^2$.
+Sie verlieren ihre Energie durch die Anregung anderer Moleküle eines Körpers, wenn sie diese passieren.
+Man unterscheidet dabei drei Ursachen des Energieverlustes.
+\begin{itemize}
+\item{Ionisation}
+\item{Bremsstrahlung}
+\item{Cherenkov}
+\end{itemize}
+Der Energieverlust der Ionisation kommt dazu zustande, wenn die geladene Teilchen Moleküle des Körpers, mit welche sie in Wechselwirkung tritt, anregt. Die Bremsstrahlung wird verursacht, wenn ein geladenes Teilchen in der Nähe eines Atomkern gelingt. Aufgrund des Coulomb-Feldes des Atomes werden die geladene Teilchen abgebremst und in eine andere Richtung gelenkt. Durch die Abbremsung emittieren die geladene Teilchen ein Teil ihrer Energie als Röntgenstrahlung.
+Die zuletzt aufgelistete Energieverlust durch Cherenkov lässt sich folgendes erklären. Trifft ein geladenes Teilchen im Medium ein, welches schneller sein darf als das Licht in Medium, so hinterlässt das Teilchen auf ihrer zurückgelegten Bahn polarisierte Bereiche.
+Die Reichweite der geladenen Teilchen lässt sich mathematisch ausdrücken:\[\ R = \int_{E}^{0} \frac{-dE}{\frac{dE}{dx}}\]
+Die Intensität eines Teilchen wird durch die Absorption der Materie abgeschwächt, die Abschwächung ist exponentiell. Sie lässt sich schreiben als:\[I = I_0 \exp^{-\mu x}\]
+Photonen können ihre Energie aus drei Gründen weitergeben:
+\begin{itemize}
+\item{Photoeffekt} Ein Photon mit der Energie $E = h \phi$ gibt eine Energie an das 
+\end{itemize}
+\end{document}
