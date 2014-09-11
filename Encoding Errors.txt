@@ -1,0 +1,5 @@
+﻿Due to the limitations of the supported zip file format, the following file(s) had to be renamed.
+
+Original File Name  ->  New File Name
+SzintillationszÃ¤hler.synctex.gz(busy) -> File1.gz(busy)
+VersuchsdurchfÃ¼hrung.synctex.gz(busy) -> File2.gz(busy)
